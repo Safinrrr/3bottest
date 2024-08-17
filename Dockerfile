@@ -5,6 +5,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Копируем файлы проекта в контейнер
+COPY /path/to/requirements.txt .
 COPY . .
 
 # Устанавливаем необходимые зависимости
